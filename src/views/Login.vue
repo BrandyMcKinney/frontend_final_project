@@ -13,7 +13,7 @@
         <label>Password:</label>
         <input type="password" v-model="password" />
       </div>
-      <input type="submit" value="Sumit" />
+      <input type="submit" value="Submit" />
     </form>
   </div>
 </template>
