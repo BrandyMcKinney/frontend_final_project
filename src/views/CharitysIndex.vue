@@ -7,6 +7,7 @@
       <!-- <p>Address:{{ charity.address }}</p>
       <p>Phone Number:{{ charity.phone_number }}</p> -->
       <button v-on:click="showCharity(charity)">More Info</button>
+      <router-link v-bind:to="`/charitys/${charity.id}`">individual charity</router-link>
     </div>
     <dialog id="charity-details">
       <form method="dialog">
@@ -53,6 +54,7 @@ export default {
     },
     addToCart: function () {
       console.log("this button works");
+      this.$router.push("/newcartedproduct");
     },
   },
 };

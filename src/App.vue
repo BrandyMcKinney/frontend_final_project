@@ -13,6 +13,7 @@
       |
       <router-link to="/charitysindex">List of Charities</router-link>
       |
+      <router-link to="/newcartedproduct">Your Charities</router-link>
     </div>
     <router-view />
   </div>

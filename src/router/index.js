@@ -5,6 +5,8 @@ import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import CharitysIndex from "../views/CharitysIndex.vue";
+import NewCartedProduct from "../views/NewCartedProduct.vue";
+import CharitysShow from "../views/CharitysShow.vue";
 
 Vue.use(VueRouter);
 
@@ -26,6 +28,8 @@ const routes = [
   { path: "/login", name: "Login", component: Login },
   { path: "/logout", name: "Logout", component: Logout },
   { path: "/charitysindex", name: "CharitysIndex", component: CharitysIndex },
+  { path: "/newcartedproduct", name: "NewCartedProduct", component: NewCartedProduct },
+  { path: "/charitys/:id", name: "charitysshow", component: CharitysShow },
 ];
 
 const router = new VueRouter({
