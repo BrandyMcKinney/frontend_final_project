@@ -7,7 +7,6 @@
       <!-- <p>Address:{{ charity.address }}</p>
       <p>Phone Number:{{ charity.phone_number }}</p> -->
       <button v-on:click="showCharity(charity)">More Info</button>
-      <router-link v-bind:to="`/charitys/${charity.id}`">individual charity</router-link>
     </div>
     <dialog id="charity-details">
       <form method="dialog">
@@ -16,14 +15,18 @@
         <p>Website:{{ currentCharity.url }}</p>
         <p>Address:{{ currentCharity.address }}</p>
         <p>Phone Number:{{ currentCharity.phone_number }}</p>
-        <button>Close</button>
-        <button v-on:click="addToCart()">Select</button>
+        <button class="close-button">Close</button>
+        <button class="close-button" v-on:click="addToCart(currentCharity)">Select</button>
       </form>
     </dialog>
   </div>
 </template>
 
-<style></style>
+<style>
+.close-button {
+  color: black !important;
+}
+</style>
 
 <script>
 import axios from "axios";
@@ -53,8 +56,17 @@ export default {
       document.querySelector("#charity-details").showModal();
     },
     addToCart: function () {
-      console.log("this button works");
-      this.$router.push("/newcartedproduct");
+      var params = {
+        name: this.CharitysIndex.name,
+        url: this.charity.url,
+        address: this.charity.address,
+        phone_number: this.charity.phone_number,
+      };
+      axios.post("/carted_products", params).then((response) => {
+        console.log("this button works", response);
+        //make a request to backend post/carted_product params must match if succcessful it'll push to saved charities
+        this.$router.push("/cartedproductsindex");
+      });
     },
   },
 };

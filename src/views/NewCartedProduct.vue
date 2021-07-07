@@ -1,22 +1,22 @@
 <template>
-  <div class="charity-new">
-    <h1>Your Charities</h1>
+  <div class="newcartedproduct">
+    <h1>Add Charities</h1>
     <form v-on:submit.prevent="createCharity()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       Selected Charity:
-      <input type="text" v-model="newCartedProduct.currentCharity" />
-      Frequency:
+      <input type="integer" v-model="newCartedProduct.charity_id" />
+      Frequency of Donation:
       <input type="text" v-model="newCartedProduct.frequency" />
-      Start Date:
+      Start Date of Donation:
       <input type="date" v-model="newCartedProduct.start_date" />
-      Amount:
+      Amount of Donation:
       <input type="integer" v-model="newCartedProduct.amount" />
 
       <input type="submit" value="Donate" />
     </form>
-    <button v-on:click="selectCharitys()">Add More Charities</button>
+    <button v-on:click="selectCharitys()">Add To Saved Charities</button>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
   methods: {
     createCharity: function () {
       var params = {
-        user_id: this.newCartedProduct.name,
+        charity_id: this.newCartedProduct.charity_id,
         frequency: this.newCartedProduct.frequency,
         start_date: this.newCartedProduct.start_date,
         amount: this.newCartedProduct.amount,
@@ -42,17 +42,15 @@ export default {
       axios
         .post("/carted_products", params)
         .then((response) => {
-          console.log("charitys create", response);
-          this.$router.push("/newcartedproduct");
+          console.log("add to charities", response);
+          // this.$router.push("/cartedproductsindex");
+          this.cartedproduct.push(response.data);
+          this.newCartedProduct = " ";
         })
         .catch((error) => {
           console.log("charitys create error", error.response);
           this.errors = error.response.data.errors;
         });
-    },
-    selectCharitys: function () {
-      console.log("this button works");
-      this.$router.push("/charitysindex");
     },
   },
 };
