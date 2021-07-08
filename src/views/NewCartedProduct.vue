@@ -1,12 +1,12 @@
 <template>
   <div class="newcartedproduct">
-    <h1>Add Charities</h1>
+    <h1>User Account Info. Can be Edited.</h1>
     <form v-on:submit.prevent="createCharity()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      Selected Charity:
-      <input type="integer" v-model="newCartedProduct.charity_id" />
+      <!-- Selected Charity: -->
+      <!-- <input type="integer" v-model="newCartedProduct.charity_id" /> -->
       Frequency of Donation:
       <input type="text" v-model="newCartedProduct.frequency" />
       Start Date of Donation:
@@ -14,9 +14,9 @@
       Amount of Donation:
       <input type="integer" v-model="newCartedProduct.amount" />
 
-      <input type="submit" value="Donate" />
+      <!-- <input type="submit" value="Donate" /> -->
     </form>
-    <button v-on:click="selectCharitys()">Add To Saved Charities</button>
+    <!-- <button v-on:click="selectCharitys()">Add To Saved Charities</button> -->
   </div>
 </template>
 

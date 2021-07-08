@@ -3,19 +3,19 @@
     <nav id="nav">
       <ul>
         <li><a href="/about" class="active">About</a></li>
-        <li><a href="/signup">Signup</a></li>
+        <li><a href="/signup">Signup/Login</a></li>
         <li><a href="/login">Login</a></li>
         <li><a href="/logout">Logout</a></li>
         <li><a href="/charitysindex">List of All Charities</a></li>
         <li><a href="/cartedproductsindex">Your Saved Charities</a></li>
-        <li><a href="/newcartedproduct">Add A Charity</a></li>
+        <li><a href="/newcartedproduct">User Account Info</a></li>
       </ul>
     </nav>
     <header id="header" class="alt">
       <span class="logo"><img src="images/logo.svg" alt="" /></span>
       <h1>GiveTo</h1>
       <p>
-        The app that keeps on giving.
+        making it simple to give.
         <br />
         <!-- built by
         <a href="https://twitter.com/ajlkn">@ajlkn</a> -->
@@ -25,7 +25,7 @@
     <router-view />
     <!-- Footer -->
     <footer id="footer">
-      <section>
+      <!-- <section>
         <h2>Aliquam sed mauris</h2>
         <p>
           Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore
@@ -35,9 +35,9 @@
         <ul class="actions">
           <li><a href="generic.html" class="button">Learn More</a></li>
         </ul>
-      </section>
+      </section> -->
       <section>
-        <h2>Etiam feugiat</h2>
+        <h2>Contact Us</h2>
         <dl class="alt">
           <dt>Address</dt>
           <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
@@ -51,16 +51,7 @@
             <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
           </li>
           <li>
-            <a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a>
-          </li>
-          <li>
             <a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a>
           </li>
         </ul>
       </section>

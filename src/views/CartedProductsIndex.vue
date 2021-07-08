@@ -1,9 +1,18 @@
 <template>
   <div class="cartedproductsindex">
-    <h1>Saved Charities</h1>
-    <div v-for="cartedproducts in cartedproducts" v-bind:key="cartedproducts.id">
-      <h2>{{ cartedproducts.id }}</h2>
-      <button v-on:click="selectCharitys()">Add More Charities</button>
+    <h1>Your Saved Charities</h1>
+    <button v-on:click="selectCharitys()">Randomly Select Charity</button>
+
+    <div v-for="cartedproduct in cartedproducts" v-bind:key="cartedproduct.id">
+      <!-- <h2>{{ cartedproduct.charity }}</h2> -->
+      <h2>{{ cartedproduct.charity.name }}</h2>
+      <h2>{{ cartedproduct.charity.url }}</h2>
+      <h2>{{ cartedproduct.charity.address }}</h2>
+      <h2>{{ cartedproduct.charity.phone_number }}</h2>
+      <h2>I give to this charity {{ cartedproduct.frequency }}.</h2>
+      <h2>This charity receives $ {{ cartedproduct.amount }}.</h2>
+      <h2>Started giving on {{ cartedproduct.start_date }}.</h2>
+      <button v-on:click="selectCharitys()">Donate</button>
 
       <!-- <img v-bind:src="charity.url" v-bind:alt="charity.name" /> -->
     </div>
@@ -32,3 +41,5 @@ export default {
   },
 };
 </script>
+
+// add update and destroy to saved charities (update with date etc, and option to delete)

@@ -20,11 +20,11 @@
         <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
       </li>
     </ul>
-    <footer class="major">
+    <!-- <footer class="major">
       <ul class="actions special">
         <li><a href="generic.html" class="button">Learn More</a></li>
       </ul>
-    </footer>
+    </footer> -->
     <!-- </section> -->
   </div>
 </template>
