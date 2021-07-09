@@ -20,22 +20,14 @@
         <!-- built by
         <a href="https://twitter.com/ajlkn">@ajlkn</a> -->
       </p>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     </header>
 
     <router-view />
     <!-- Footer -->
     <footer id="footer">
-      <!-- <section>
-        <h2>Aliquam sed mauris</h2>
-        <p>
-          Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore
-          veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae
-          tincidunt odio.
-        </p>
-        <ul class="actions">
-          <li><a href="generic.html" class="button">Learn More</a></li>
-        </ul>
-      </section> -->
       <section>
         <h2>Contact Us</h2>
         <dl class="alt">
@@ -64,4 +56,8 @@
   </div>
 </template>
 
-<style></style>
+<style>
+#app {
+  font-family: "Lato", sans-serif;
+}
+</style>
