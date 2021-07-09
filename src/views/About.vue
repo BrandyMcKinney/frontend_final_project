@@ -1,11 +1,15 @@
 <template>
-  <div section id="first" class="main special">
-    <header class="major">
-      <h2>Magna veroeros</h2>
-    </header>
+  <div section id="about" class="main special">
+    <header class="major"></header>
     <ul class="features">
       <li>
-        <span class="icon solid major style1 fa-code"></span>
+        <span class="logo">
+          <img
+            src="https://images.pexels.com/photos/706194/pexels-photo-706194.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+        </span>
+
         <h3>Ipsum consequat</h3>
         <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
       </li>
@@ -28,3 +32,9 @@
     <!-- </section> -->
   </div>
 </template>
+<style>
+#about {
+  width: 800px;
+  margin: 0 auto;
+}
+</style>

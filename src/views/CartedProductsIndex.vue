@@ -1,5 +1,5 @@
 <template>
-  <div class="cartedproductsindex">
+  <div section id="saved" class="cartedproductsindex">
     <h1>Your Saved Charities</h1>
     <button v-on:click="randomizedCharitys()">Randomly Select Charity</button>
 
@@ -19,6 +19,12 @@
     </div>
   </div>
 </template>
+<style>
+#saved {
+  width: 800px;
+  margin: 0 auto;
+}
+</style>
 
 <script>
 import axios from "axios";

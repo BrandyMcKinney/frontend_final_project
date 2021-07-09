@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div section id="charitiesindex" class="allcharities">
     <h1>{{ message }}</h1>
     <div v-for="charity in charitys" v-bind:key="charity.id">
       <h2>{{ charity.name }}</h2>
@@ -27,6 +27,11 @@
 <style>
 .close-button {
   color: black !important;
+}
+
+#charitiesindex {
+  width: 800px;
+  margin: 0 auto;
 }
 </style>
 
