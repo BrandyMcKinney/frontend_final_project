@@ -2,8 +2,8 @@
   <div id="app">
     <nav id="nav">
       <ul>
-        <li><a href="/about" class="active">About</a></li>
-        <li><a href="/signup">Signup/Login</a></li>
+        <li><a href="/" class="active">Home</a></li>
+        <!-- <li><a href="/signup">Signup/Login</a></li> -->
         <li><a href="/login">Login</a></li>
         <li><a href="/logout">Logout</a></li>
         <li><a href="/charitysindex">List of All Charities</a></li>
@@ -12,11 +12,13 @@
       </ul>
     </nav>
     <header id="header" class="alt">
-      <span class="logo"><img src="images/logo.svg" alt="" /></span>
-      <h1>GiveTo</h1>
+      <!-- <h1>GiveTo</h1> -->
       <p>
-        making it simple to give.
-        <br />
+        <span class="logo">
+          <img src="images/givetologo.png" alt="GiveTo logo black letters with white branches" />
+        </span>
+
+        <!-- <br /> -->
         <!-- built by
         <a href="https://twitter.com/ajlkn">@ajlkn</a> -->
       </p>
@@ -27,7 +29,7 @@
 
     <router-view />
     <!-- Footer -->
-    <footer id="footer">
+    <!-- <footer id="footer">
       <section>
         <h2>Contact Us</h2>
         <dl class="alt">
@@ -52,7 +54,7 @@
         <a href="https://html5up.net">HTML5 UP</a>
         .
       </p>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
