@@ -6,13 +6,11 @@
         <span class="logo">
           <img src="images/llamasGiveTo.png" alt="" />
         </span>
-
         <h3>Hope</h3>
         <p>for change</p>
       </li>
       <li>
         <img src="images/people.png" alt="" />
-
         <!-- <span class="icon major style3 fa-copy"></span> -->
         <h3>Love</h3>
         <p>by showing care</p>
@@ -27,7 +25,11 @@
 
     <footer class="major">
       <ul class="actions special">
-        <li><a href="http://localhost:8080/signup" class="button">Get Started</a></li>
+        <li>
+          <a href="/signup" class="button">Get Started</a>
+        </li>
+
+        <li><a href="/login" class="button">Signin</a></li>
       </ul>
 
       <section>

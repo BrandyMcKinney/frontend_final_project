@@ -4,10 +4,10 @@
       <ul>
         <li><a href="/" class="active">Home</a></li>
         <!-- <li><a href="/signup">Signup/Login</a></li> -->
-        <li><a href="/login">Login</a></li>
-        <li><a href="/logout">Logout</a></li>
-        <li><a href="/charitysindex">List of All Charities</a></li>
+        <!-- <li><a href="/login">Login</a></li> -->
+        <li><a href="/charitysindex">All Charities</a></li>
         <li><a href="/cartedproductsindex">Your Saved Charities</a></li>
+        <li><a href="/logout">Logout</a></li>
         <li><a href="/newcartedproduct">User Account Info</a></li>
       </ul>
     </nav>
@@ -61,5 +61,6 @@
 <style>
 #app {
   font-family: "Lato", sans-serif;
+  /* background: linear-gradient(#ffebcd 10%, #90d5ec 70%); */
 }
 </style>
