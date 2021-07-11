@@ -13,8 +13,7 @@
       <form method="dialog">
         <h1>Charity Information</h1>
         <p>Name: {{ currentCharity.name }}</p>
-        <p>Website:{{ currentCharity.url }}</p>
-        <p><a href="${currentCharity.url}">website</a></p>
+        <p>Website: {{ currentCharity.url }}"></p>
         <p>Address:{{ currentCharity.address }}</p>
         <p>Phone Number:{{ currentCharity.phone_number }}</p>
         <button class="close-button">Close</button>
@@ -63,17 +62,6 @@ export default {
       document.querySelector("#charity-details").showModal();
     },
     addToCart: function () {
-      // var params = {
-      //   name: this.charitys.name,
-      //   url: this.charitys.url,
-      //   address: this.charitys.address,
-      //   phone_number: this.charitys.phone_number,
-      // };
-      // axios.post("/charities", params).then((response) => {
-      //   console.log("this button works", response);
-      //   //make a request to backend post/carted_product params must match if succcessful it'll push to saved charities
-      //   this.$router.push("/cartedproductsindex");
-      // });
       var params = {
         charity_id: this.currentCharity.id,
       };

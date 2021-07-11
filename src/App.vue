@@ -8,7 +8,7 @@
         <li><a href="/charitysindex">All Charities</a></li>
         <li><a href="/cartedproductsindex">Your Saved Charities</a></li>
         <li><a href="/logout">Logout</a></li>
-        <li><a href="/newcartedproduct">User Account Info</a></li>
+        <!-- <li><a href="/newcartedproduct">User Account Info</a></li> -->
       </ul>
     </nav>
     <header id="header" class="alt">
