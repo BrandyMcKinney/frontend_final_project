@@ -1,16 +1,5 @@
 <template>
   <div id="app">
-    <nav id="nav">
-      <ul>
-        <li><a href="/" class="active">Home</a></li>
-        <!-- <li><a href="/signup">Signup/Login</a></li> -->
-        <!-- <li><a href="/login">Login</a></li> -->
-        <li><a href="/charitysindex">All Charities</a></li>
-        <li><a href="/cartedproductsindex">Your Saved Charities</a></li>
-        <li><a href="/logout">Logout</a></li>
-        <!-- <li><a href="/newcartedproduct">User Account Info</a></li> -->
-      </ul>
-    </nav>
     <header id="header" class="alt">
       <!-- <h1>GiveTo</h1> -->
       <p>
@@ -23,7 +12,17 @@
         <a href="https://twitter.com/ajlkn">@ajlkn</a> -->
       </p>
     </header>
-
+    <nav id="nav">
+      <ul>
+        <li><a href="/" class="active">Home</a></li>
+        <!-- <li><a href="/signup">Signup/Login</a></li> -->
+        <!-- <li><a href="/login">Login</a></li> -->
+        <li><a href="/charitysindex">All Charities</a></li>
+        <li><a href="/cartedproductsindex">Your Saved Charities</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <!-- <li><a href="/newcartedproduct">User Account Info</a></li> -->
+      </ul>
+    </nav>
     <router-view />
     <!-- Footer -->
     <!-- <footer id="footer">
