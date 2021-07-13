@@ -1,86 +1,111 @@
 <template>
-  <div section id="savedcharities" class="cartedproductsindex">
-    <header>
-      <h1>Your Charities & Organizations</h1>
-      <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
-      <button v-on:click="randomizedCharitys(cartedproducts)">Help Me Decide!</button>
-      <dialog id="random-charity">
-        <form method="dialog">
-          <h1>Charity Information</h1>
-          <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>
-          <!-- <p>Website: {{ chosenCharity.url }}</p> -->
-          <button class="close-button">Close</button>
-          <button class="donate-button">Donate</button>
-        </form>
-      </dialog>
-    </header>
+  <!-- <section id="intro" class="main"> -->
+  <section id="intro" class="main">
+    <div class="spotlight">
+      <div class="content">
+        <header class="major">
+          <br />
+          <br />
+          <br />
+          <br />
+          <h2>Your Charities & Organizations</h2>
+          <h1>Your Charities & Organizations</h1>
+          <!-- <h1>Your Charities & Organizations</h1> -->
+          <a href="/charitysindex" class="button">Add More Charities</a>
+          <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
+        </header>
+        <p>Need help deciding who to donate to? We can do that for you. No worries!</p>
+        <button v-on:click="randomizedCharitys(cartedproducts)">Decide For Me</button>
+        <dialog id="random-charity">
+          <form method="dialog">
+            <h1>Charity Information</h1>
+            <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>
+            <!-- <p>Website: {{ chosenCharity.url }}</p> -->
+            <button class="close-button">Close</button>
+            <button class="donate-button">Donate</button>
+          </form>
+        </dialog>
+        <p></p>
+      </div>
+      <span class="image"><img src="images/earthGiveTo.png" alt="" /></span>
+    </div>
 
-    <div>
-      <!-- <span>Picked: {{ picked }}</span> -->
-      <div v-for="cartedproduct in cartedproducts" v-bind:key="cartedproduct.id">
-        <h2>{{ cartedproduct.charity.name }}</h2>
-        <h2>{{ cartedproduct.charity.url }}</h2>
-        <!-- <h2>Address:{{ cartedproduct.charity.address }}</h2>
+    <div section id="savedcharities" class="cartedproductsindex">
+      <header>
+        <!-- <h1>Your Charities & Organizations</h1> -->
+        <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
+        <!-- <button v-on:click="randomizedCharitys(cartedproducts)">Help Me Decide!</button> -->
+        <dialog id="random-charity">
+          <form method="dialog">
+            <h1>Charity Information</h1>
+            <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>
+            <!-- <p>Website: {{ chosenCharity.url }}</p> -->
+            <button class="close-button">Close</button>
+            <button class="donate-button">Donate</button>
+          </form>
+        </dialog>
+      </header>
+
+      <div>
+        <!-- <span>Picked: {{ picked }}</span> -->
+        <div v-for="cartedproduct in cartedproducts" v-bind:key="cartedproduct.id">
+          <h2>{{ cartedproduct.charity.name }}</h2>
+          <h2>{{ cartedproduct.charity.url }}</h2>
+          <!-- <h2>Address:{{ cartedproduct.charity.address }}</h2>
         <h2>Phone Number: {{ cartedproduct.charity.phone_number }}</h2> -->
 
-        I donate to this charity:
+          I will donate:
 
-        <input type="radio" :id="`monthly${cartedproduct.id}`" value="Monthly" v-model="cartedproduct.frequency" />
-        <label :for="`monthly${cartedproduct.id}`">Monthly</label>
+          <input type="radio" :id="`monthly${cartedproduct.id}`" value="Monthly" v-model="cartedproduct.frequency" />
+          <label :for="`monthly${cartedproduct.id}`">Monthly</label>
 
-        <input type="radio" :id="`quarterly${cartedproduct.id}`" value="Quarterly" v-model="cartedproduct.frequency" />
-        <label :for="`quarterly${cartedproduct.id}`">Quarterly</label>
+          <input
+            type="radio"
+            :id="`quarterly${cartedproduct.id}`"
+            value="Quarterly"
+            v-model="cartedproduct.frequency"
+          />
+          <label :for="`quarterly${cartedproduct.id}`">Quarterly</label>
 
-        <input type="radio" :id="`annually${cartedproduct.id}`" value="Annually" v-model="cartedproduct.frequency" />
-        <label :for="`annually${cartedproduct.id}`">Annually</label>
+          <input type="radio" :id="`annually${cartedproduct.id}`" value="Annually" v-model="cartedproduct.frequency" />
+          <label :for="`annually${cartedproduct.id}`">Annually</label>
 
-        <span>Donation Frequency: {{ cartedproduct.frequency }}</span>
-        <!-- <h2>
+          <span>Donation Frequency is: {{ cartedproduct.frequency }}</span>
+          <!-- <h2>
           I donate to this charity:
           <input type="text" v-model="cartedproduct.frequency" />
         </h2> -->
-        <h2>
-          This charity receives:
-          <input type="integer" v-model="cartedproduct.amount" />
-        </h2>
+          <h2>
+            This charity receives:
+            <input type="integer" v-model="cartedproduct.amount" />
+          </h2>
 
-        <h2>Started giving on {{ cartedproduct.start_date }}.</h2>
-        <button v-on:click="confirmNotify()">Donate</button>
-        <button v-on:click="updateCartedProduct(cartedproduct)">Edit Charity</button>
-        <button v-on:click="destroyCartedProduct(cartedProduct)">Remove Charity</button>
+          <h2>Started giving on {{ cartedproduct.start_date }}.</h2>
+          <button v-on:click="confirmNotify()">Donate</button>
+          <button v-on:click="updateCartedProduct(cartedproduct)">Edit Charity</button>
+          <button v-on:click="destroyCartedProduct(cartedProduct)">Remove Charity</button>
+        </div>
       </div>
-      <p>
-        <a href="/charitysindex" class="button">Add More Charities</a>
-      </p>
+      <br />
+      <footer class="pagefooter">
+        <section>
+          <ul class="icons">
+            <li>
+              <a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a>
+            </li>
+            <li>
+              <a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a>
+            </li>
+          </ul>
+        </section>
+        <p class="copyright">
+          &copy; Untitled. Design:
+          <a href="https://html5up.net">HTML5 UP</a>
+          .
+        </p>
+      </footer>
     </div>
-
-    <footer class="pagefooter">
-      <section>
-        <h2>Contact Us</h2>
-        <dl class="alt">
-          <dt>Address</dt>
-          <dd>1234 Grey Calico Lane &bull; Baltimore, MD 21213 &bull; USA</dd>
-          <dt>Phone</dt>
-          <dd>(000) 000-0000 x 0000</dd>
-          <dt>Email</dt>
-          <dd><a href="#">giveto@test.com</a></dd>
-        </dl>
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
-          </li>
-        </ul>
-      </section>
-      <p class="copyright">
-        &copy; Untitled. Design:
-        <a href="https://html5up.net">HTML5 UP</a>
-        .
-      </p>
-    </footer>
-  </div>
+  </section>
 </template>
 <style>
 .donate-button {
