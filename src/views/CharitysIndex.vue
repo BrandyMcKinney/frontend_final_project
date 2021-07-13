@@ -3,6 +3,7 @@
     <h1>{{ message }}</h1>
     <div v-for="charity in charitys" v-bind:key="charity.id">
       <h2>{{ charity.name }}</h2>
+      <img width="300px" v-bind:src="charity.image" v-bind:alt="charity.name" />
 
       <button v-on:click="showCharity(charity)">More Info</button>
     </div>
