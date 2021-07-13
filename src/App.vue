@@ -61,6 +61,5 @@
 #app {
   font-family: "Open Sans", sans-serif;
   color: black;
-  /* background: linear-gradient(#eae7e2 25%, #f9d4b4 50%, #8afeeb 75%); */
 }
 </style>

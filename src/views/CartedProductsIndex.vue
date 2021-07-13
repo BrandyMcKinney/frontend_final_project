@@ -8,7 +8,7 @@
           <br />
           <br />
           <br />
-          <h2>Your Charities & Organizations</h2>
+          <h2></h2>
           <h1>Your Charities & Organizations</h1>
           <!-- <h1>Your Charities & Organizations</h1> -->
           <a href="/charitysindex" class="button">Add More Charities</a>

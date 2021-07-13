@@ -65,4 +65,8 @@
     </section>
   </section>
 </template>
-<style></style>
+<style>
+.major {
+  font: black;
+}
+</style>

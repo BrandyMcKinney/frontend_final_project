@@ -5,7 +5,7 @@
       <br />
       <br />
       <p>
-        You are here because you care.
+        You're here because you care.
         <br />
         Human rights? Animal activism? Or concerns about the planet? Find causes that spark your passion!
       </p>
