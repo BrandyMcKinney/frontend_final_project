@@ -3,20 +3,20 @@
     <header>
       <h1>Your Charities & Organizations</h1>
       <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
-      <button v-on:click="randomizedCharitys(cartedproducts)">Randomly Select Charity</button>
+      <button v-on:click="randomizedCharitys(cartedproducts)">Help Me Decide!</button>
       <dialog id="random-charity">
         <form method="dialog">
           <h1>Charity Information</h1>
-          <p>Name: {{ chosenCharity.name }}</p>
-          <!-- <p>Website: {{ currentCharity.url }}</p> -->
+          <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>
+          <!-- <p>Website: {{ chosenCharity.url }}</p> -->
           <button class="close-button">Close</button>
+          <button class="donate-button">Donate</button>
         </form>
       </dialog>
     </header>
-    <p>
-      <a href="/charitysindex" class="button">Add More Charities</a>
-    </p>
+
     <div>
+      <!-- <span>Picked: {{ picked }}</span> -->
       <div v-for="cartedproduct in cartedproducts" v-bind:key="cartedproduct.id">
         <h2>{{ cartedproduct.charity.name }}</h2>
         <h2>{{ cartedproduct.charity.url }}</h2>
@@ -24,16 +24,16 @@
         <h2>Phone Number: {{ cartedproduct.charity.phone_number }}</h2> -->
 
         I donate to this charity:
-        <br />
-        <input type="radio" id="timeframe" value="Monthly" v-model="cartedproduct.frequency" />
-        <label for="monthly">Monthly</label>
 
-        <input type="radio" id="timeframe" value="Quarterly" v-model="cartedproduct.frequency" />
-        <label for="quarterly">Quarterly</label>
+        <input type="radio" :id="`monthly${cartedproduct.id}`" value="Monthly" v-model="cartedproduct.frequency" />
+        <label :for="`monthly${cartedproduct.id}`">Monthly</label>
 
-        <input type="radio" id="timeframe" value="Annually" v-model="cartedproduct.frequency" />
-        <label for="annually">Annually</label>
-        <br />
+        <input type="radio" :id="`quarterly${cartedproduct.id}`" value="Quarterly" v-model="cartedproduct.frequency" />
+        <label :for="`quarterly${cartedproduct.id}`">Quarterly</label>
+
+        <input type="radio" :id="`annually${cartedproduct.id}`" value="Annually" v-model="cartedproduct.frequency" />
+        <label :for="`annually${cartedproduct.id}`">Annually</label>
+
         <span>Donation Frequency: {{ cartedproduct.frequency }}</span>
         <!-- <h2>
           I donate to this charity:
@@ -49,6 +49,9 @@
         <button v-on:click="updateCartedProduct(cartedproduct)">Edit Charity</button>
         <button v-on:click="destroyCartedProduct(cartedProduct)">Remove Charity</button>
       </div>
+      <p>
+        <a href="/charitysindex" class="button">Add More Charities</a>
+      </p>
     </div>
 
     <footer class="pagefooter">
@@ -80,6 +83,10 @@
   </div>
 </template>
 <style>
+.donate-button {
+  color: black !important;
+}
+
 #savedcharities {
   width: 800px;
   margin: 0 auto;
@@ -94,6 +101,7 @@ export default {
       cartedproducts: [],
       chosenCharity: "",
       newCartedProduct: {},
+      picked: "",
     };
   },
   created: function () {

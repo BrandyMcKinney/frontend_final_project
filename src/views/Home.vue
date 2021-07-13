@@ -9,18 +9,21 @@
     </h>
     <body>
       <h2>
-        <span class="logo1"></span>
-        <img src="images/llamasGiveTo2.png" alt="" />
+        <span class="logo1">
+          <img src="images/llamasGiveTo2.png" alt="" />
+        </span>
         <h3>HOPE</h3>
         <h6>for change</h6>
 
-        <span class="logo2"></span>
-        <img src="images/peopleGiveTo2.png" alt="" />
+        <span class="logo2">
+          <img src="images/peopleGiveTo2.png" alt="" />
+        </span>
         <h3>LOVE</h3>
         <h6>by showing care</h6>
 
-        <span class="logo3"></span>
-        <img src="images/earthGiveTo3.png" alt="" />
+        <span class="logo3">
+          <img src="images/earthGiveTo3.png" alt="" />
+        </span>
         <h3>SUPPORT</h3>
         <p>through giving</p>
       </h2>

@@ -59,9 +59,9 @@
 </template>
 
 <style>
-#app {
+/* #app {
   font-family: "Open Sans", sans-serif;
   color: black;
   background: linear-gradient(#eae7e2 25%, #feddd8 50%, #ceebe9 75%);
-}
+} */
 </style>
