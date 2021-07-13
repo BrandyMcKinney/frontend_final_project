@@ -4,8 +4,14 @@
     <div v-for="charity in charitys" v-bind:key="charity.id">
       <h2>{{ charity.name }}</h2>
       <img width="300px" v-bind:src="charity.image" v-bind:alt="charity.name" />
-
-      <button v-on:click="showCharity(charity)">More Info</button>
+      <!-- <p>{{ charity.description }}</p> -->
+      <p>
+        Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros.
+        Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+      </p>
+      <ul class="actions">
+        <li><button v-on:click="showCharity(charity)">More Info</button></li>
+      </ul>
     </div>
     <dialog id="charity-details">
       <form method="dialog">
@@ -19,7 +25,7 @@
         <button class="close-button" v-on:click="addToCart(currentCharity)">Save</button>
       </form>
     </dialog>
-    <footer class="pagefooter">
+    <!-- <footer class="pagefooter">
       <section>
         <h2>Contact Us</h2>
         <dl class="alt">
@@ -44,7 +50,7 @@
         <a href="https://html5up.net">HTML5 UP</a>
         .
       </p>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
@@ -68,7 +74,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Charity List",
+      message: "LIST OF CHARITIES",
       charitys: [],
       currentCharity: {},
     };

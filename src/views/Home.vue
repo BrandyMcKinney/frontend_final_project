@@ -2,34 +2,14 @@
   <!-- First Section -->
   <section id="home" class="main special">
     <header class="major">
+      <br />
+      <br />
       <h2>
         <blockquote>
           Do all the good you can, by all the means you can, in all the ways you can, in all the places you can, at all
           the times you can, to all the people you can, as long as ever you can." -John Wesley
         </blockquote>
       </h2>
-    </header>
-    <ul class="features">
-      <li>
-        <span class="logo1"></span>
-        <img src="images/llamasGiveTo2.png" />
-        <h3>HOPE</h3>
-        <p>for change</p>
-      </li>
-      <li>
-        <span class="logo2"></span>
-        <img src="images/peopleGiveTo2.png" />
-        <h3>LOVE</h3>
-        <p>by showing care</p>
-      </li>
-      <li>
-        <span class="logo3"></span>
-        <img src="images/earthGiveTo3.png" />
-        <h3>SUPPORT</h3>
-        <p>through giving</p>
-      </li>
-    </ul>
-    <footer class="major">
       <ul class="actions special">
         <li>
           <a href="/signup" class="button">Get Started</a>
@@ -37,6 +17,30 @@
 
         <li><a href="/login" class="button">Signin</a></li>
       </ul>
+    </header>
+    <section>
+      <ul class="features">
+        <li>
+          <span class="logo1"></span>
+          <img src="images/llamasGiveTo2.png" />
+          <h3>HOPE</h3>
+          <p>for change</p>
+        </li>
+        <li>
+          <span class="logo2"></span>
+          <img src="images/peopleGiveTo2.png" />
+          <h3>LOVE</h3>
+          <p>by showing care</p>
+        </li>
+        <li>
+          <span class="logo3"></span>
+          <img src="images/earthGiveTo3.png" />
+          <h3>SUPPORT</h3>
+          <p>through giving</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="main-footer">
       <h2>Contact Us</h2>
       <dl class="alt">
         <dt>Address</dt>
