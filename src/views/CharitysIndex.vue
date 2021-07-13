@@ -4,22 +4,46 @@
     <div v-for="charity in charitys" v-bind:key="charity.id">
       <h2>{{ charity.name }}</h2>
 
-      <!-- <p>Website:{{ charity.url }}</p> -->
-      <!-- <p>Address:{{ charity.address }}</p>
-      <p>Phone Number:{{ charity.phone_number }}</p> -->
       <button v-on:click="showCharity(charity)">More Info</button>
     </div>
     <dialog id="charity-details">
       <form method="dialog">
+        <!-- <img src="images/earthGiveTo.png" alt="" /> -->
         <h1>Charity Information</h1>
         <p>Name: {{ currentCharity.name }}</p>
-        <p>Website: {{ currentCharity.url }}"></p>
+        <p>Website: {{ currentCharity.url }}</p>
         <p>Address:{{ currentCharity.address }}</p>
         <p>Phone Number:{{ currentCharity.phone_number }}</p>
         <button class="close-button">Close</button>
         <button class="close-button" v-on:click="addToCart(currentCharity)">Save</button>
       </form>
     </dialog>
+    <footer class="pagefooter">
+      <section>
+        <h2>Contact Us</h2>
+        <dl class="alt">
+          <dt>Address</dt>
+          <dd>1234 Grey Calico Lane &bull; Baltimore, MD 21213 &bull; USA</dd>
+          <dt>Phone</dt>
+          <dd>(000) 000-0000 x 0000</dd>
+          <dt>Email</dt>
+          <dd><a href="#">giveto@test.com</a></dd>
+        </dl>
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+          </li>
+        </ul>
+      </section>
+      <p class="copyright">
+        &copy; Untitled. Design:
+        <a href="https://html5up.net">HTML5 UP</a>
+        .
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -32,6 +56,9 @@
   width: 800px;
   margin: 0 auto;
 }
+/* #dialog {
+  background-image: "images/earthGiveTo.png";
+} */
 </style>
 
 <script>

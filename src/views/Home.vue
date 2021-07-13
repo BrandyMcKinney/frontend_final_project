@@ -1,29 +1,29 @@
 <template>
   <div section id="home" class="main special">
     <header class="major"></header>
-    <ul class="features">
-      <li>
-        <span class="logo">
-          <img src="images/llamasGiveTo.png" alt="" />
-        </span>
-        <h3>Hope</h3>
-        <p>for change</p>
-      </li>
-      <li>
-        <img src="images/people.png" alt="" />
-        <!-- <span class="icon major style3 fa-copy"></span> -->
-        <h3>Love</h3>
-        <p>by showing care</p>
-      </li>
-      <li>
-        <!-- <span class="icon major style5 fa-gem"></span> -->
-        <img src="images/earth.png" alt="" />
-        <h3>Support</h3>
-        <p>through giving</p>
-      </li>
-    </ul>
+    <h>
+      <blockquote>
+        Do all the good you can, by all the means you can, in all the ways you can, in all the places you can, at all
+        the times you can, to all the people you can, as long as ever you can." -John Wesley
+      </blockquote>
+    </h>
+    <body>
+      <h2>
+        <span class="logo1"></span>
+        <img src="images/llamasGiveTo2.png" alt="" />
+        <h3>HOPE</h3>
+        <h6>for change</h6>
 
-    <footer class="major">
+        <span class="logo2"></span>
+        <img src="images/peopleGiveTo2.png" alt="" />
+        <h3>LOVE</h3>
+        <h6>by showing care</h6>
+
+        <span class="logo3"></span>
+        <img src="images/earthGiveTo3.png" alt="" />
+        <h3>SUPPORT</h3>
+        <p>through giving</p>
+      </h2>
       <ul class="actions special">
         <li>
           <a href="/signup" class="button">Get Started</a>
@@ -31,16 +31,17 @@
 
         <li><a href="/login" class="button">Signin</a></li>
       </ul>
-
+    </body>
+    <footer class="pagefooter">
       <section>
         <h2>Contact Us</h2>
         <dl class="alt">
           <dt>Address</dt>
-          <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+          <dd>1234 Grey Calico Lane &bull; Baltimore, MD 21213 &bull; USA</dd>
           <dt>Phone</dt>
           <dd>(000) 000-0000 x 0000</dd>
           <dt>Email</dt>
-          <dd><a href="#">information@untitled.tld</a></dd>
+          <dd><a href="#">giveto@test.com</a></dd>
         </dl>
         <ul class="icons">
           <li>
@@ -60,39 +61,4 @@
     <!-- </section> -->
   </div>
 </template>
-<style>
-.image {
-  opacity: 1;
-  display: block;
-  width: auto;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.features:hover .image {
-  opacity: 0.3;
-}
-
-.features:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #04aa6d;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-</style>
+<style></style>

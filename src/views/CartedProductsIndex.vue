@@ -1,22 +1,37 @@
 <template>
-  <div section id="saved" class="cartedproductsindex">
-    <h1>Your Saved Charities</h1>
-    <button v-on:click="randomizedCharitys()">Randomly Select Charity</button>
+  <div section id="savedcharities" class="cartedproductsindex">
+    <header>
+      <h1>Your Charities & Organizations</h1>
+      <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
+      <button v-on:click="randomizedCharitys(cartedproducts)">Randomly Select Charity</button>
+      <dialog id="random-charity">
+        <form method="dialog">
+          <h1>Charity Information</h1>
+          <p>Name: {{ chosenCharity.name }}</p>
+          <!-- <p>Website: {{ currentCharity.url }}</p> -->
+          <button class="close-button">Close</button>
+        </form>
+      </dialog>
+    </header>
+    <p>
+      <a href="/charitysindex" class="button">Add More Charities</a>
+    </p>
     <div>
       <div v-for="cartedproduct in cartedproducts" v-bind:key="cartedproduct.id">
-        <h2>Charity: {{ cartedproduct.charity.name }}</h2>
-        <h2>Website: {{ cartedproduct.charity.url }}</h2>
-        <h2>Address:{{ cartedproduct.charity.address }}</h2>
-        <h2>Phone Number: {{ cartedproduct.charity.phone_number }}</h2>
+        <h2>{{ cartedproduct.charity.name }}</h2>
+        <h2>{{ cartedproduct.charity.url }}</h2>
+        <!-- <h2>Address:{{ cartedproduct.charity.address }}</h2>
+        <h2>Phone Number: {{ cartedproduct.charity.phone_number }}</h2> -->
+
         I donate to this charity:
         <br />
-        <input type="radio" id="monthly" value="Monthly" v-model="cartedproduct.frequency" />
+        <input type="radio" id="timeframe" value="Monthly" v-model="cartedproduct.frequency" />
         <label for="monthly">Monthly</label>
-        <br />
-        <input type="radio" id="quarterly" value="Quarterly" v-model="cartedproduct.frequency" />
+
+        <input type="radio" id="timeframe" value="Quarterly" v-model="cartedproduct.frequency" />
         <label for="quarterly">Quarterly</label>
-        <br />
-        <input type="radio" id="annually" value="Annually" v-model="cartedproduct.frequency" />
+
+        <input type="radio" id="timeframe" value="Annually" v-model="cartedproduct.frequency" />
         <label for="annually">Annually</label>
         <br />
         <span>Donation Frequency: {{ cartedproduct.frequency }}</span>
@@ -35,13 +50,37 @@
         <button v-on:click="destroyCartedProduct(cartedProduct)">Remove Charity</button>
       </div>
     </div>
-    <li>
-      <a href="/charitysindex" class="button">Add More Charities</a>
-    </li>
+
+    <footer class="pagefooter">
+      <section>
+        <h2>Contact Us</h2>
+        <dl class="alt">
+          <dt>Address</dt>
+          <dd>1234 Grey Calico Lane &bull; Baltimore, MD 21213 &bull; USA</dd>
+          <dt>Phone</dt>
+          <dd>(000) 000-0000 x 0000</dd>
+          <dt>Email</dt>
+          <dd><a href="#">giveto@test.com</a></dd>
+        </dl>
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+          </li>
+        </ul>
+      </section>
+      <p class="copyright">
+        &copy; Untitled. Design:
+        <a href="https://html5up.net">HTML5 UP</a>
+        .
+      </p>
+    </footer>
   </div>
 </template>
 <style>
-#saved {
+#savedcharities {
   width: 800px;
   margin: 0 auto;
 }
@@ -68,10 +107,11 @@ export default {
         // this.$router.push("/newcartedproduct");
       });
     },
-    randomizedCharitys: function () {
+    randomizedCharitys: function (cartedproducts) {
       var chosenNumber = Math.floor(Math.random() * this.cartedproducts.length);
-      this.chosenCharity = this.cartedproducts[chosenNumber];
+      this.chosenCharity = cartedproducts[chosenNumber].charity;
       console.log("this button works", this.chosenCharity);
+      document.querySelector("#random-charity").showModal();
     },
     createCartedProduct: function () {
       var params = {

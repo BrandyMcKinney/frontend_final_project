@@ -15,16 +15,13 @@
       <!-- <h1>GiveTo</h1> -->
       <p>
         <span class="logo">
-          <img src="images/givetologo.png" alt="GiveTo logo black letters with white branches" />
+          <img src="images/Mainlogo.png" alt="GiveTo logo black letters with white branches" />
         </span>
 
         <!-- <br /> -->
         <!-- built by
         <a href="https://twitter.com/ajlkn">@ajlkn</a> -->
       </p>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     </header>
 
     <router-view />
@@ -55,12 +52,16 @@
         .
       </p>
     </footer> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: "Lato", sans-serif;
-  /* background: linear-gradient(#ffebcd 10%, #90d5ec 70%); */
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  background: linear-gradient(#eae7e2 25%, #feddd8 50%, #ceebe9 75%);
 }
 </style>
