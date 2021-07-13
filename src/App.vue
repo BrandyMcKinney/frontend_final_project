@@ -4,7 +4,7 @@
       <!-- <h1>GiveTo</h1> -->
       <p>
         <span class="logo">
-          <img src="images/Mainlogo.png" alt="GiveTo logo black letters with white branches" />
+          <img src="images/Mainlogo2.png" alt="GiveTo logo black letters with white branches" />
         </span>
 
         <!-- <br /> -->
@@ -58,9 +58,9 @@
 </template>
 
 <style>
-/* #app {
+#app {
   font-family: "Open Sans", sans-serif;
   color: black;
-  background: linear-gradient(#eae7e2 25%, #feddd8 50%, #ceebe9 75%);
-} */
+  /* background: linear-gradient(#eae7e2 25%, #f9d4b4 50%, #8afeeb 75%); */
+}
 </style>

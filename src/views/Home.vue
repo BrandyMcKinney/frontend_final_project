@@ -24,23 +24,23 @@
           <span class="logo1"></span>
           <img src="images/llamasGiveTo2.png" />
           <h3>HOPE</h3>
-          <p>for change</p>
+          <p>continue to hope for change</p>
         </li>
         <li>
           <span class="logo2"></span>
           <img src="images/peopleGiveTo2.png" />
           <h3>LOVE</h3>
-          <p>by showing care</p>
+          <p>continue to love by showing care</p>
         </li>
         <li>
           <span class="logo3"></span>
           <img src="images/earthGiveTo3.png" />
           <h3>SUPPORT</h3>
-          <p>through giving</p>
+          <p>continue to support through giving</p>
         </li>
       </ul>
     </section>
-    <footer class="main-footer">
+    <section>
       <h2>Contact Us</h2>
       <dl class="alt">
         <dt>Address</dt>
@@ -52,17 +52,17 @@
       </dl>
       <ul class="icons">
         <li>
-          <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
+          <a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a>
         </li>
         <li>
-          <a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
+          <a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a>
         </li>
       </ul>
-    </footer>
-    <p class="copyright">
-      &copy; Untitled. Design:
-      <a href="https://html5up.net">HTML5 UP</a>
-    </p>
+      <p class="copyright">
+        &copy; Untitled. Design:
+        <a href="https://html5up.net">HTML5 UP</a>
+      </p>
+    </section>
   </section>
 </template>
 <style></style>
