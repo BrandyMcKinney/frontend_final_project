@@ -18,11 +18,9 @@
           <div v-for="charity in charitys" v-bind:key="charity.id">
             <h2>{{ charity.name }}</h2>
             <img width="300px" v-bind:src="charity.image" v-bind:alt="charity.name" />
+            <p>{{ charity.description }}</p>
             <!-- <p>{{ charity.description }}</p> -->
-            <p>
-              Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet
-              veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
-            </p>
+
             <ul class="actions">
               <li><button v-on:click="showCharity(charity)">More Info</button></li>
             </ul>
@@ -33,6 +31,7 @@
               <h1>Charity Information</h1>
               <p>Name: {{ currentCharity.name }}</p>
               <p>Website: {{ currentCharity.url }}</p>
+              <!-- <p><a href="{{currentCharity.url}}"></a></p> -->
               <p>Address:{{ currentCharity.address }}</p>
               <p>Phone Number:{{ currentCharity.phone_number }}</p>
               <button class="close-button">Close</button>

@@ -22,19 +22,19 @@
       <ul class="features">
         <li>
           <span class="logo1"></span>
-          <img src="images/llamasGiveTo2.png" />
+          <img src="images/llamasGiveTo.png" />
           <h3>HOPE</h3>
           <p>hope for change</p>
         </li>
         <li>
           <span class="logo2"></span>
-          <img src="images/peopleGiveTo2.png" />
+          <img src="images/peopleGiveTo.png" />
           <h3>LOVE</h3>
           <p>love by showing care</p>
         </li>
         <li>
           <span class="logo3"></span>
-          <img src="images/earthGiveTo3.png" />
+          <img src="images/earthGiveTo.png" />
           <h3>SUPPORT</h3>
           <p>support through giving</p>
         </li>
