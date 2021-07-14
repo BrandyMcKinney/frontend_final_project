@@ -9,7 +9,7 @@
           <p>
             You're here because you care.
             <br />
-            Human rights? Animal activism? Or concerns about the planet? Find causes that spark your passion!
+            Human rights? Animal activism? Or concerns about the planet? Find a cause that spark your passion!
           </p>
         </header>
 
@@ -19,18 +19,19 @@
             <h2>{{ charity.name }}</h2>
             <img width="300px" v-bind:src="charity.image" v-bind:alt="charity.name" />
             <p>{{ charity.description }}</p>
-            <!-- <p>{{ charity.description }}</p> -->
+            <ul></ul>
 
-            <ul class="actions">
-              <li><button v-on:click="showCharity(charity)">More Info</button></li>
-            </ul>
+            <ul class="actions"></ul>
+            <button v-on:click="showCharity(charity)">More Info</button>
           </div>
           <dialog id="charity-details">
             <form method="dialog">
-              <!-- <img src="images/earthGiveTo.png" alt="" /> -->
+              <img src="images/earthGiveTo.png" />
               <h1>Charity Information</h1>
               <p>Name: {{ currentCharity.name }}</p>
-              <p>Website: {{ currentCharity.url }}</p>
+              <p>
+                <a :href="currentCharity.url" target="_blank">{{ currentCharity.url }}</a>
+              </p>
               <!-- <p><a href="{{currentCharity.url}}"></a></p> -->
               <p>Address:{{ currentCharity.address }}</p>
               <p>Phone Number:{{ currentCharity.phone_number }}</p>
@@ -74,7 +75,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "LIST OF CHARITIES",
+      message: "",
       charitys: [],
       currentCharity: {},
     };
