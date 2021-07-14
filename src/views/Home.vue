@@ -24,32 +24,23 @@
           <span class="logo1"></span>
           <img src="images/llamasGiveTo2.png" />
           <h3>HOPE</h3>
-          <p>continue to hope for change</p>
+          <p>hope for change</p>
         </li>
         <li>
           <span class="logo2"></span>
           <img src="images/peopleGiveTo2.png" />
           <h3>LOVE</h3>
-          <p>continue to love by showing care</p>
+          <p>love by showing care</p>
         </li>
         <li>
           <span class="logo3"></span>
           <img src="images/earthGiveTo3.png" />
           <h3>SUPPORT</h3>
-          <p>continue to support through giving</p>
+          <p>support through giving</p>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Contact Us</h2>
-      <dl class="alt">
-        <dt>Address</dt>
-        <dd>1234 Grey Calico Lane &bull; Baltimore, MD 21213 &bull; USA</dd>
-        <dt>Phone</dt>
-        <dd>(000) 000-0000 x 0000</dd>
-        <dt>Email</dt>
-        <dd><a href="#">giveto@test.com</a></dd>
-      </dl>
       <ul class="icons">
         <li>
           <a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a>
