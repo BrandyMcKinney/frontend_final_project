@@ -35,7 +35,7 @@
         <!-- <h1>Your Charities & Organizations</h1> -->
         <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
         <!-- <button v-on:click="randomizedCharitys(cartedproducts)">Help Me Decide!</button> -->
-        <dialog id="random-charity">
+        <dialog id="random-charity" style="text-align: center">
           <form method="dialog">
             <h1>Charity Information</h1>
             <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>

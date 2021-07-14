@@ -9,7 +9,8 @@
           <p>
             You're here because you care.
             <br />
-            Human rights? Animal activism? Or concerns about the planet? Find a cause that spark your passion!
+            Deep concerns about human rights? Love animals? Or maybe concerns about the planet? Find a cause that sparks
+            your passion!
           </p>
         </header>
 
@@ -17,7 +18,7 @@
           <h1>{{ message }}</h1>
           <div v-for="charity in charitys" v-bind:key="charity.id">
             <h2>{{ charity.name }}</h2>
-            <img width="300px" v-bind:src="charity.image" v-bind:alt="charity.name" />
+            <img width="700px" v-bind:src="charity.image" v-bind:alt="charity.name" />
             <p>{{ charity.description }}</p>
             <ul></ul>
 
@@ -25,7 +26,7 @@
             <button v-on:click="showCharity(charity)">More Info</button>
           </div>
           <dialog id="charity-details">
-            <form method="dialog">
+            <form method="dialog" style="text-align: center">
               <img src="images/earthGiveTo.png" />
               <h1>Charity Information</h1>
               <p>Name: {{ currentCharity.name }}</p>
