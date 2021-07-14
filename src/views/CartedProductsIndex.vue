@@ -27,7 +27,7 @@
         </dialog>
         <p></p>
       </div>
-      <span class="image"><img src="images/earthGiveTo.png" alt="" /></span>
+      <span class="image"><img src="images/earth300.png" alt="" /></span>
     </div>
 
     <div section id="savedcharities" class="cartedproductsindex">

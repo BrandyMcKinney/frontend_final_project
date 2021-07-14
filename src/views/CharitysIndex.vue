@@ -27,8 +27,8 @@
           </div>
           <dialog id="charity-details">
             <form method="dialog" style="text-align: center">
-              <img src="images/earthGiveTo.png" />
-              <h1>Charity Information</h1>
+              <img src="images/earth200.png" />
+              <h1>About this charity:</h1>
               <p>Name: {{ currentCharity.name }}</p>
               <p>
                 <a :href="currentCharity.url" target="_blank">{{ currentCharity.url }}</a>
