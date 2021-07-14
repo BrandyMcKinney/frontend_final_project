@@ -80,7 +80,7 @@
             <input type="integer" v-model="cartedproduct.amount" />
           </h2>
 
-          <h2>Started giving on {{ cartedproduct.start_date }}.</h2>
+          <!-- <h2>Started giving on {{ cartedproduct.start_date }}.</h2> -->
           <button v-on:click="confirmNotify()">Donate</button>
           <button v-on:click="updateCartedProduct(cartedproduct)">Edit Charity</button>
           <button v-on:click="destroyCartedProduct(cartedProduct)">Remove Charity</button>
