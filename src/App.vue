@@ -3,15 +3,6 @@
     <!-- Header -->
     <header id="header" class="alt">
       <span class="logo"><img src="images/Mainlogo2.png" alt="" /></span>
-      <!-- <p>
-        simply give
-        <br /> -->
-      <!-- built by
-        <a href="https://twitter.com/ajlkn">@ajlkn</a>
-        for
-        <a href="https://html5up.net">HTML5 UP</a>
-        . -->
-      <!-- </p> -->
     </header>
 
     <!-- Nav -->
@@ -39,9 +30,6 @@
         <p>
           Our goal is to make donating to your favorite charity or organization an enjoyable and simplified process.
         </p>
-        <!-- <ul class="actions">
-          <li><a href="generic.html" class="button">Learn More</a></li>
-        </ul> -->
       </section>
       <section>
         <h2>Contact Us</h2>
@@ -53,18 +41,7 @@
           <dt>Email</dt>
           <dd><a href="#">giveto@test.com</a></dd>
         </dl>
-        <ul class="icons">
-          <!-- <li>
-            <a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a>
-          </li>
-
-          <li>
-            <a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a>
-          </li> -->
-        </ul>
+        <ul class="icons"></ul>
       </section>
       <p class="copyright">
         &copy; Untitled. Design:

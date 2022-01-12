@@ -5,18 +5,14 @@
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      <!-- Selected Charity: -->
-      <!-- <input type="integer" v-model="newCartedProduct.charity_id" /> -->
+
       Frequency of Donation:
       <input type="text" v-model="newCartedProduct.frequency" />
       Start Date of Donation:
       <input type="date" v-model="newCartedProduct.start_date" />
       Amount of Donation:
       <input type="integer" v-model="newCartedProduct.amount" />
-
-      <!-- <input type="submit" value="Donate" /> -->
     </form>
-    <!-- <button v-on:click="selectCharitys()">Add To Saved Charities</button> -->
   </div>
 </template>
 
@@ -43,7 +39,6 @@ export default {
         .post("/carted_products", params)
         .then((response) => {
           console.log("add to charities", response);
-          // this.$router.push("/cartedproductsindex");
           this.cartedproduct.push(response.data);
           this.newCartedProduct = " ";
         })

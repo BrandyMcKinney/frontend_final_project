@@ -33,7 +33,6 @@
               <p>
                 <a :href="currentCharity.url" target="_blank">{{ currentCharity.url }}</a>
               </p>
-              <!-- <p><a href="{{currentCharity.url}}"></a></p> -->
               <p>Address:{{ currentCharity.address }}</p>
               <p>Phone Number:{{ currentCharity.phone_number }}</p>
               <button class="close-button">Close</button>
@@ -65,9 +64,6 @@
   width: 800px;
   margin: 0 auto;
 }
-/* #dialog {
-  background-image: "images/earthGiveTo.png";
-} */
 </style>
 
 <script>
@@ -77,6 +73,7 @@ export default {
   data: function () {
     return {
       message: "",
+      // response: [],
       charitys: [],
       currentCharity: {},
     };

@@ -189,10 +189,10 @@ html {
 
 body {
   background-color: #eae7e2;
-  background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #8afeeb 85%);
-  background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #8afeeb 85%);
-  background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #8afeeb 85%);
-  background-image: url("images/overlay.png"), linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #8afeeb 85%);
+  background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #ffffff 85%);
+  background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #ffffff 85%);
+  background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #ffffff 85%);
+  background-image: url("images/overlay.png"), linear-gradient(45deg, #f9d4b4 15%, #abe1fc 50%, #ffffff 85%);
 }
 
 body.is-preload *,

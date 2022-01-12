@@ -15,6 +15,8 @@
       </div>
       <input type="submit" value="Submit" />
     </form>
+    <p>Feel free to use the following login:</p>
+    <p>Email: friendly@test.com Password: password</p>
   </div>
 </template>
 

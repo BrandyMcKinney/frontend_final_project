@@ -1,5 +1,4 @@
 <template>
-  <!-- <section id="intro" class="main"> -->
   <section id="intro" class="main">
     <div class="spotlight">
       <div class="content">
@@ -10,9 +9,8 @@
           <br />
           <h2></h2>
           <h1>Your Charities & Organizations</h1>
-          <!-- <h1>Your Charities & Organizations</h1> -->
+
           <a href="/charitysindex" class="button">Add More Charities</a>
-          <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
         </header>
         <p>Need help deciding who to donate to? We can do that for you. No worries!</p>
         <button v-on:click="randomizedCharitys(cartedproducts)">Decide For Me</button>
@@ -20,7 +18,6 @@
           <form method="dialog">
             <h1>Charity Information</h1>
             <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>
-            <!-- <p>Website: {{ chosenCharity.url }}</p> -->
             <button class="close-button">Close</button>
             <button class="donate-button">Donate</button>
           </form>
@@ -32,14 +29,10 @@
 
     <div section id="savedcharities" class="cartedproductsindex">
       <header>
-        <!-- <h1>Your Charities & Organizations</h1> -->
-        <!-- <button v-on:click="showCharity(charity)">More Info</button> -->
-        <!-- <button v-on:click="randomizedCharitys(cartedproducts)">Help Me Decide!</button> -->
         <dialog id="random-charity" style="text-align: center">
           <form method="dialog">
             <h1>Charity Information</h1>
             <p>The randomly selected charity is '{{ chosenCharity.name }}'!</p>
-            <!-- <p>Website: {{ chosenCharity.url }}</p> -->
             <button class="close-button">Close</button>
             <button class="donate-button">Donate</button>
           </form>
