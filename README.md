@@ -7,7 +7,6 @@ This is the frontend of my very first project that I built for my capstone proje
 ## Languages
 * CSS
 * HTML
-* Vue
 * JavaScript
 
 ## Framework
